@@ -1,20 +1,40 @@
 key_trigger {
   input: KEY_UP
-  action: "up"
+  action: "up1"
 }
 key_trigger {
   input: KEY_DOWN
-  action: "down"
+  action: "down1"
 }
 key_trigger {
   input: KEY_LEFT
-  action: "left"
+  action: "left1"
 }
 key_trigger {
   input: KEY_RIGHT
-  action: "right"
+  action: "right1"
 }
 key_trigger {
   input: KEY_SPACE
-  action: "fire"
+  action: "fire1"
+}
+key_trigger {
+  input: KEY_W
+  action: "up2"
+}
+key_trigger {
+  input: KEY_A
+  action: "left2"
+}
+key_trigger {
+  input: KEY_S
+  action: "down2"
+}
+key_trigger {
+  input: KEY_D
+  action: "right2"
+}
+key_trigger {
+  input: KEY_LSHIFT
+  action: "fire2"
 }
