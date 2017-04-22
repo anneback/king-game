@@ -3,6 +3,10 @@ fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
 }
+fonts {
+  name: "text"
+  font: "/assets/font/text.font"
+}
 background_color {
   x: 0.0
   y: 0.0
@@ -23,8 +27,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 1.0
-    y: 1.0
+    x: 1.9350477
+    y: 1.9907057
     z: 1.0
     w: 1.0
   }
@@ -42,8 +46,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "eppi game"
-  font: "system_font"
+  text: "Thug life"
+  font: "text"
   id: "title"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -64,16 +68,12 @@ nodes {
   line_break: false
   layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
   template_node_child: false
   text_leading: 1.0
   text_tracking: 0.0
-  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
@@ -89,8 +89,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 1.0
-    y: 1.0
+    x: 2.2151163
+    y: 2.0702806
     z: 1.0
     w: 1.0
   }
@@ -109,7 +109,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Kills:"
-  font: "system_font"
+  font: "text"
   id: "kills"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -130,16 +130,12 @@ nodes {
   line_break: false
   layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
   template_node_child: false
   text_leading: 1.0
   text_tracking: 0.0
-  size_mode: SIZE_MODE_AUTO
 }
 nodes {
   position {
@@ -155,8 +151,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 1.0
-    y: 1.0
+    x: 2.2151163
+    y: 2.0702806
     z: 1.0
     w: 1.0
   }
@@ -175,7 +171,7 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "0"
-  font: "system_font"
+  font: "text"
   id: "score"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -196,16 +192,12 @@ nodes {
   line_break: false
   layer: ""
   inherit_alpha: true
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
   template_node_child: false
   text_leading: 1.0
   text_tracking: 0.0
-  size_mode: SIZE_MODE_AUTO
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
