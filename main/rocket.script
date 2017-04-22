@@ -22,16 +22,14 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-    if message_id == hash("animation_done") then
-    	go.delete()
-	elseif message_id == hash("explode") then
-		-- die rocket
-		msg.post("#sprite", "play_animation", { id = hash("explosion") })
-		-- reset rotation
-		go.set_rotation(vmath.quat())
-		self.speed = 0
-		self.life = 1000
-		--go.delete() -- current game object is deleted
+    if message_id == hash("explode") then
+    	
+		local pos = go.get_position()
+		print(rot)
+		--local rot = vmath.quat_rotation_z(0)
+		--collectionfactory.create()
+		factory.create("level#explosionfactory", pos, vmath.quat())
+		go.delete() -- current game object is deleted
 	end
 end
 

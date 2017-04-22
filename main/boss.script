@@ -1,6 +1,5 @@
 function init(self)
-    -- Add initialization code here
-    -- Remove this function if not needed
+    self.hitpoints = 100
 end
 
 function final(self)
@@ -15,11 +14,14 @@ end
 
 function on_message(self, message_id, message, sender)
     if message_id == hash("collision_response") then
-    	go.delete()
+    	self.hitpoints = self.hitpoints - 1
     	local rocket_id = message.other_id
     	msg.post(rocket_id, "explode")
-    	
-    	msg.post("/gui#hud", "add_score", { score = 10 })
+    	if self.hitpoints <= 0 then
+    		go.delete()
+    		
+    		msg.post("/gui#hud", "add_score", { score = 100 })
+    	end
 	end
 end
 
